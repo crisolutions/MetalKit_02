@@ -13,6 +13,7 @@
 		2900940B20E6C2C100CE1EA5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940A20E6C2C100CE1EA5 /* Math.swift */; };
 		2900940D20E6C39A00CE1EA5 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940C20E6C39A00CE1EA5 /* Scene.swift */; };
 		2900940F20E6C3DE00CE1EA5 /* CubeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940E20E6C3DE00CE1EA5 /* CubeScene.swift */; };
+		2900941120E6C40900CE1EA5 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900941020E6C40900CE1EA5 /* Cube.swift */; };
 		2942685C2097593A008B0C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942685B2097593A008B0C65 /* AppDelegate.swift */; };
 		294268602097593B008B0C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2942685F2097593B008B0C65 /* Assets.xcassets */; };
 		294268632097593B008B0C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294268612097593B008B0C65 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		2900940A20E6C2C100CE1EA5 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		2900940C20E6C39A00CE1EA5 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		2900940E20E6C3DE00CE1EA5 /* CubeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeScene.swift; sourceTree = "<group>"; };
+		2900941020E6C40900CE1EA5 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		294268582097593A008B0C65 /* macOSMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2942685B2097593A008B0C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2942685F2097593B008B0C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				2900940620E6BEB300CE1EA5 /* Primitive.swift */,
 				2900940C20E6C39A00CE1EA5 /* Scene.swift */,
 				2900940E20E6C3DE00CE1EA5 /* CubeScene.swift */,
+				2900941020E6C40900CE1EA5 /* Cube.swift */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2942687020976100008B0C65 /* Shaders.metal in Sources */,
+				2900941120E6C40900CE1EA5 /* Cube.swift in Sources */,
 				2900940720E6BEB300CE1EA5 /* Primitive.swift in Sources */,
 				2900940920E6BF5E00CE1EA5 /* Types.swift in Sources */,
 				2900940420E6BD6400CE1EA5 /* Node.swift in Sources */,

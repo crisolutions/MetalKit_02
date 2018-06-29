@@ -24,9 +24,14 @@ class Primitive: Node {
     // MARK: init withDevice
     init(withDevice device: MTLDevice) {
         super.init()
+        buildVertices()
         buildBuffers(device: device)
         buildPipelineState(device: device)
-//        buildDepthStencil(device: device)
+        buildDepthStencil(device: device)
+    }
+    
+    public func buildVertices() {
+    
     }
     
     /// Create the MTLBuffers from the MTLDevice

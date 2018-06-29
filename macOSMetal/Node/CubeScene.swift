@@ -13,7 +13,7 @@ class CubeScene: Scene {
         
         super.init(device: device)
         
-        let c = Cube(device: device)
+        let c = Cube(withDevice: device)
         objects.append(c)
         c.translate(direction: float3(0,0,-6))
         add(child: c)
