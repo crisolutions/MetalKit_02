@@ -19,7 +19,7 @@ class Primitive: Node {
     var renderPipelineState: MTLRenderPipelineState!
     var depthStencilState: MTLDepthStencilState!
     // Constraints
-    var modelConstraints = ModelContraints()
+    var modelConstraints = ModelConstraints()
     
     // MARK: init withDevice
     init(withDevice device: MTLDevice) {
@@ -82,6 +82,22 @@ class Primitive: Node {
         depthStencilDescriptor.depthCompareFunction = .less
         depthStencilState = device.makeDepthStencilState(descriptor: depthStencilDescriptor)
     }
+    
+    // MARK: Render
+    override func render(commandEncoder: MTLRenderCommandEncoder, deltaTime: Float) {
+        commandEncoder.setRenderPipelineState(renderPipelineState)
+        super.render(commandEncoder: commandEncoder, deltaTime: deltaTime)
+        commandEncoder.setVertexBuffer(vertexBuffer,
+                                       offset: 0,
+                                       index: 0)
+        commandEncoder.setDepthStencilState(depthStencilState)
+        commandEncoder.setVertexBytes(&modelConstraints, length: MemoryLayout<ModelConstraints>.stride, index: 1)
+        commandEncoder.drawIndexedPrimitives(type: .triangle,
+                                             indexCount: indices.count,
+                                             indexType: .uint16,
+                                             indexBuffer: indexBuffer,
+                                             indexBufferOffset: 0)
+    }
 }
 
 extension Primitive: Constraintable {
@@ -95,23 +111,5 @@ extension Primitive: Constraintable {
     
     func rotate(angle: Float, axis: float3) {
         modelConstraints.modelMatrix.rotate(angle: angle, axis: axis)
-    }
-}
-
-// MARK: Render
-extension Primitive {
-    override func render(commandEncoder: MTLRenderCommandEncoder, deltaTime: Float) {
-        commandEncoder.setRenderPipelineState(renderPipelineState)
-        super.render(commandEncoder: commandEncoder, deltaTime: deltaTime)
-        commandEncoder.setVertexBuffer(vertexBuffer,
-                                       offset: 0,
-                                       index: 0)
-        commandEncoder.setDepthStencilState(depthStencilState)
-        commandEncoder.setVertexBytes(&modelContants, length: MemoryLayout<ModelContants>.stride, index: 1)
-        commandEncoder.drawIndexedPrimitives(type: .triangle,
-                                             indexCount: indices.count,
-                                             indexType: .uint16,
-                                             indexBuffer: indexBuffer,
-                                             indexBufferOffset: 0)
     }
 }

@@ -13,11 +13,11 @@ struct Vertex {
     var color: float4
 }
 
-struct ModelContraints {
+struct ModelConstraints {
     var modelMatrix = matrix_identity_float4x4
 }
 
-struct SceneContraints {
+struct SceneConstraints {
     var projectionMatrix = matrix_identity_float4x4
 }
 
