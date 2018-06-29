@@ -20,3 +20,11 @@ struct ModelContraints {
 struct SceneContraints {
     var projectionMatrix = matrix_identity_float4x4
 }
+
+protocol Constraintable {
+    func scale(axis: float3)
+    
+    func translate(direction: float3)
+    
+    func rotate(angle: Float, axis: float3)
+}
