@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2900940420E6BD6400CE1EA5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940320E6BD6400CE1EA5 /* Node.swift */; };
+		2900940720E6BEB300CE1EA5 /* Primitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940620E6BEB300CE1EA5 /* Primitive.swift */; };
+		2900940920E6BF5E00CE1EA5 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2900940820E6BF5E00CE1EA5 /* Types.swift */; };
 		2942685C2097593A008B0C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2942685B2097593A008B0C65 /* AppDelegate.swift */; };
 		294268602097593B008B0C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2942685F2097593B008B0C65 /* Assets.xcassets */; };
 		294268632097593B008B0C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294268612097593B008B0C65 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		2900940320E6BD6400CE1EA5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2900940620E6BEB300CE1EA5 /* Primitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Primitive.swift; sourceTree = "<group>"; };
+		2900940820E6BF5E00CE1EA5 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		294268582097593A008B0C65 /* macOSMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2942685B2097593A008B0C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2942685F2097593B008B0C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				2900940320E6BD6400CE1EA5 /* Node.swift */,
+				2900940620E6BEB300CE1EA5 /* Primitive.swift */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 				2942686D20975C55008B0C65 /* Renderer.swift */,
 				2942686F20976100008B0C65 /* Shaders.metal */,
 				2900940520E6BD8A00CE1EA5 /* Node */,
+				2900940820E6BF5E00CE1EA5 /* Types.swift */,
 			);
 			path = macOSMetal;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2942687020976100008B0C65 /* Shaders.metal in Sources */,
+				2900940720E6BEB300CE1EA5 /* Primitive.swift in Sources */,
+				2900940920E6BF5E00CE1EA5 /* Types.swift in Sources */,
 				2900940420E6BD6400CE1EA5 /* Node.swift in Sources */,
 				2942686C20975A34008B0C65 /* MetalView.swift in Sources */,
 				2942686E20975C55008B0C65 /* Renderer.swift in Sources */,
